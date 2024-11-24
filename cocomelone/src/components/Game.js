@@ -8,7 +8,6 @@ const Game =()=>{
     const [result,setResult]=useState("");
 
     useEffect(()=>{
-
         setRandomAnimal();
     },[]);
 
@@ -19,11 +18,11 @@ const Game =()=>{
 
     const handleAnimalClick = (selectedAnimal)=>{
         if(selectedAnimal === target){
-            setResult("You are win!");
+            setResult("You won!");
         }
         else
         {
-            setResult("You are lost!")
+            setResult("You lost!")
             
         }
     };
@@ -31,7 +30,7 @@ const Game =()=>{
     return(
     <div className="container">
       <h1 className="title">Animal Recognition Game</h1>
-      <h2 className="subtitle">Find: {animals}</h2>
+      <h2 className="subtitle">Find: {target}</h2>
       <div className="grid-container">
         {animals.map((animal, indexA) => (
           <Card
