@@ -29,10 +29,10 @@ const Game =()=>{
     };
 
     return(
-        <div>
-      <h1>Animal Recognition Game</h1>
-      <h2>Find: {targetAnimal}</h2>
-      <div>
+    <div className="container">
+      <h1 className="title">Animal Recognition Game</h1>
+      <h2 className="subtitle">Find: {targetAnimal}</h2>
+      <div className="grid-container">
         {animals.map((animal, indexA) => (
           <Card
             key={indexA}
