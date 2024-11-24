@@ -17,8 +17,8 @@ const Game =()=>{
         setTarget(animals[index].name); 
     };
 
-    const handleAnimalClick = (selectdAnimal)=>{
-        if(selectedAnimal == target){
+    const handleAnimalClick = (selectedAnimal)=>{
+        if(selectedAnimal === target){
             setResult("You are win!");
         }
         else
@@ -31,7 +31,7 @@ const Game =()=>{
     return(
     <div className="container">
       <h1 className="title">Animal Recognition Game</h1>
-      <h2 className="subtitle">Find: {targetAnimal}</h2>
+      <h2 className="subtitle">Find: {animals}</h2>
       <div className="grid-container">
         {animals.map((animal, indexA) => (
           <Card
