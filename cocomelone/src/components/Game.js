@@ -41,8 +41,8 @@ const Game =()=>{
           />
         ))}
       </div>
-      {result && <h3>{result}</h3>}
-      <button onClick={setRandomAnimal}>Play Again</button>
+      {result && <div className="result">{result}</div>}
+      <button className="play-again-btn" onClick={setRandomAnimal}>Play Again</button>
     </div>
     );
 
