@@ -1,6 +1,7 @@
 import React, {useState,useEffect} from "react";
 import { animals } from "../data/AnimalsDb";
 import Card from "./Card";
+import "./Game.css";
 
 const Game =()=>{
     const [target,setTarget] = useState("");
